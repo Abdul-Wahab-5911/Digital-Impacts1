@@ -1,0 +1,84 @@
+@import url('https://googleapis.com');
+
+.services-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.services-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0b1a30;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.highlight-text {
+    color: #0076c0;
+}
+
+/* Flexbox layout to center-align the uneven row count perfectly */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 118, 192, 0.15);
+    /* Soft blue shadow */
+    border-bottom: 8px solid #00a4e4;
+    /* Accent bottom bar */
+    padding: 30px 24px;
+    width: 320px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0b1a30;
+    margin: 0 0 20px 0;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #00a4e4;
+    margin-bottom: 25px;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #556270;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+    .services-heading {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
